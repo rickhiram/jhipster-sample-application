@@ -1,36 +1,37 @@
 {
   "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.mycompany.myapp",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "5.1.0",
     "applicationType": "monolith",
-    "gitCompany": "",
-    "baseName": "jhipsterSampleApplication",
-    "packageName": "io.github.jhipster.application",
-    "packageFolder": "io/github/jhipster/application",
-    "serverPort": 8090,
-    "serviceDiscoveryType": false,
+    "baseName": "jhipster2",
+    "packageName": "com.mycompany.myapp",
+    "packageFolder": "com/mycompany/myapp",
+    "serverPort": "8080",
     "authenticationType": "jwt",
-    "uaaBaseName": "../uaa",
     "cacheProvider": "ehcache",
     "enableHibernateCache": true,
     "websocket": false,
     "databaseType": "sql",
     "devDatabaseType": "h2Disk",
-    "prodDatabaseType": "mysql",
+    "prodDatabaseType": "mssql",
     "searchEngine": false,
-    "enableSwaggerCodegen": "true",
     "messageBroker": false,
+    "serviceDiscoveryType": false,
     "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "137ac17d58ea7e12ca7c22da0f9bc7421b610a75",
+    "clientFramework": "angularX",
     "useSass": false,
     "clientPackageManager": "yarn",
     "testFrameworks": [],
-    "enableTranslation": false,
+    "jhiPrefix": "jhi",
+    "enableTranslation": true,
     "nativeLanguage": "en",
     "languages": [
       "en"
-    ],
-    "clientFramework": "angularX",
-    "jhiPrefix": "jhi"
-  },
-  "git-provider": "GitHub",
-  "git-company": "rickhiram",
-  "repository-name": "jhipster-sample-application"
+    ]
+  }
 }

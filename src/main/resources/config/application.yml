@@ -34,7 +34,7 @@ management:
 
 spring:
     application:
-        name: jhipsterSampleApplication
+        name: jhipster2
     profiles:
         # The commented value for `active` can be replaced with valid Spring profiles to load.
         # Otherwise, it will be filled in by maven when building the WAR file
@@ -86,11 +86,11 @@ jhipster:
         #allow-credentials: true
         #max-age: 1800
     mail:
-        from: jhipsterSampleApplication@localhost
+        from: jhipster2@localhost
     swagger:
         default-include-pattern: /api/.*
-        title: jhipsterSampleApplication API
-        description: jhipsterSampleApplication API documentation
+        title: jhipster2 API
+        description: jhipster2 API documentation
         version: 0.0.1
         terms-of-service-url:
         contact-name:

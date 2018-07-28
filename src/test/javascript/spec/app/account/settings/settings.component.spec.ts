@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 import { Observable, throwError } from 'rxjs';
 
-import { JhipsterSampleApplicationTestModule } from '../../../test.module';
+import { Jhipster2TestModule } from '../../../test.module';
 import { Principal, AccountService } from 'app/core';
 import { SettingsComponent } from 'app/account/settings/settings.component';
 
@@ -14,7 +14,7 @@ describe('Component Tests', () => {
 
         beforeEach(async(() => {
             TestBed.configureTestingModule({
-                imports: [JhipsterSampleApplicationTestModule],
+                imports: [Jhipster2TestModule],
                 declarations: [SettingsComponent],
                 providers: []
             })

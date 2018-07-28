@@ -1,0 +1,19 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "type",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180726175211",
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "microserviceName": "WntVehicleAuthority",
+    "searchEngine": false,
+    "entityTableName": "categories",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

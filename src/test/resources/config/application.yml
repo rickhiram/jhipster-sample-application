@@ -16,12 +16,12 @@
 
 spring:
     application:
-        name: jhipsterSampleApplication
+        name: jhipster2
     cache:
         type: simple
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:h2:mem:jhipsterSampleApplication;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+        url: jdbc:h2:mem:jhipster2;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
         name:
         username:
         password:
@@ -86,7 +86,7 @@ jhipster:
     security:
         authentication:
             jwt:
-                secret: 3541d31d32ecd192b2fd3337cdfc67a5031efb57
+                secret: 137ac17d58ea7e12ca7c22da0f9bc7421b610a75
                 # Token is valid 24 hours
                 token-validity-in-seconds: 86400
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration

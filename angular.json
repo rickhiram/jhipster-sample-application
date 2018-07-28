@@ -3,14 +3,14 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "jhipster-sample-application": {
+    "jhipster-2": {
       "root": "",
       "sourceRoot": "src/main/webapp",
       "projectType": "application",
       "architect": {}
     }
   },
-  "defaultProject": "jhipster-sample-application",
+  "defaultProject": "jhipster-2",
   "cli": {
     "packageManager": "yarn"
   },

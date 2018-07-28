@@ -1,6 +1,6 @@
 version: '2'
 services:
-    jhipstersampleapplication-sonar:
+    jhipster2-sonar:
         image: sonarqube:7.1-alpine
         ports:
             - 9000:9000

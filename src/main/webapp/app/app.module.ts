@@ -10,28 +10,28 @@ import { AuthInterceptor } from './blocks/interceptor/auth.interceptor';
 import { AuthExpiredInterceptor } from './blocks/interceptor/auth-expired.interceptor';
 import { ErrorHandlerInterceptor } from './blocks/interceptor/errorhandler.interceptor';
 import { NotificationInterceptor } from './blocks/interceptor/notification.interceptor';
-import { JhipsterSampleApplicationSharedModule } from 'app/shared';
-import { JhipsterSampleApplicationCoreModule } from 'app/core';
-import { JhipsterSampleApplicationAppRoutingModule } from './app-routing.module';
-import { JhipsterSampleApplicationHomeModule } from './home/home.module';
-import { JhipsterSampleApplicationAccountModule } from './account/account.module';
-import { JhipsterSampleApplicationEntityModule } from './entities/entity.module';
+import { Jhipster2SharedModule } from 'app/shared';
+import { Jhipster2CoreModule } from 'app/core';
+import { Jhipster2AppRoutingModule } from './app-routing.module';
+import { Jhipster2HomeModule } from './home/home.module';
+import { Jhipster2AccountModule } from './account/account.module';
+import { Jhipster2EntityModule } from './entities/entity.module';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
-import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ErrorComponent } from './layouts';
+import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ActiveMenuDirective, ErrorComponent } from './layouts';
 
 @NgModule({
     imports: [
         BrowserModule,
-        JhipsterSampleApplicationAppRoutingModule,
+        Jhipster2AppRoutingModule,
         Ng2Webstorage.forRoot({ prefix: 'jhi', separator: '-' }),
-        JhipsterSampleApplicationSharedModule,
-        JhipsterSampleApplicationCoreModule,
-        JhipsterSampleApplicationHomeModule,
-        JhipsterSampleApplicationAccountModule,
-        JhipsterSampleApplicationEntityModule
+        Jhipster2SharedModule,
+        Jhipster2CoreModule,
+        Jhipster2HomeModule,
+        Jhipster2AccountModule,
+        Jhipster2EntityModule
         // jhipster-needle-angular-add-module JHipster will add new module here
     ],
-    declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, FooterComponent],
+    declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
     providers: [
         {
             provide: HTTP_INTERCEPTORS,
@@ -60,4 +60,4 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
     ],
     bootstrap: [JhiMainComponent]
 })
-export class JhipsterSampleApplicationAppModule {}
+export class Jhipster2AppModule {}

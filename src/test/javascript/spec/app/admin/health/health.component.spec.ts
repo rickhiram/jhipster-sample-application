@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 
-import { JhipsterSampleApplicationTestModule } from '../../../test.module';
+import { Jhipster2TestModule } from '../../../test.module';
 import { JhiHealthCheckComponent } from 'app/admin/health/health.component';
 import { JhiHealthService } from 'app/admin/health/health.service';
 
@@ -12,7 +12,7 @@ describe('Component Tests', () => {
 
         beforeEach(async(() => {
             TestBed.configureTestingModule({
-                imports: [JhipsterSampleApplicationTestModule],
+                imports: [Jhipster2TestModule],
                 declarations: [JhiHealthCheckComponent]
             })
                 .overrideTemplate(JhiHealthCheckComponent, '')

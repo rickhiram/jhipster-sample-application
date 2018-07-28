@@ -17,7 +17,7 @@ logging:
     level:
         ROOT: DEBUG
         io.github.jhipster: DEBUG
-        io.github.jhipster.application: DEBUG
+        com.mycompany.myapp: DEBUG
 
 spring:
     profiles:
@@ -32,8 +32,8 @@ spring:
         serialization.indent_output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:h2:file:./target/h2db/db/jhipstersampleapplication;DB_CLOSE_DELAY=-1
-        username: jhipsterSampleApplication
+        url: jdbc:h2:file:./target/h2db/db/jhipster2;DB_CLOSE_DELAY=-1
+        username: jhipster2
         password:
     h2:
         console:
@@ -62,7 +62,7 @@ spring:
 
 # ===================================================================
 # To enable SSL, generate a certificate using:
-# keytool -genkey -alias jhipstersampleapplication -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
+# keytool -genkey -alias jhipster2 -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
 #
 # You can also use Let's Encrypt:
 # https://maximilian-boehm.com/hp2121/Create-a-Java-Keystore-JKS-from-Let-s-Encrypt-Certificates.htm
@@ -75,10 +75,10 @@ spring:
 #        key-store: keystore.p12
 #        key-store-password: <your-password>
 #        key-store-type: PKCS12
-#        key-alias: jhipstersampleapplication
+#        key-alias: jhipster2
 # ===================================================================
 server:
-    port: 8090
+    port: 8080
 
 # ===================================================================
 # JHipster specific properties
@@ -109,8 +109,8 @@ jhipster:
                 token-validity-in-seconds: 86400
                 token-validity-in-seconds-for-remember-me: 2592000
     mail: # specific JHipster mail property, for standard properties see MailProperties
-        from: jhipsterSampleApplication@localhost
-        base-url: http://127.0.0.1:8090
+        from: jhipster2@localhost
+        base-url: http://127.0.0.1:8080
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
         jmx:
             enabled: true
